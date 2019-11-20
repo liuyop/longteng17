@@ -1,0 +1,105 @@
+# 按用例名区分数据
+valid_data_source_id: &valid_id bHRz
+invalid_data_source_id: &invalid_id bHRjczEx
+valid_id_number: &id_number 352202199909090905
+valid_user_name: &user_name libre0314
+valid_user_id: &user_id 1364414
+
+
+test_addFuelCard_normal:
+  data_source_id: *valid_id
+  card_number: lyp_0001
+
+test_dataSourceId_noAuthority:
+  data_source_id: *invalid_id
+  card_number: lyp_0002
+
+test_methodId_invalid:
+  data_source_id: *valid_id
+  card_number: lyp_0003
+
+test_bingFuelCard_normal:
+  data_source_id: *valid_id
+  card_number: lyp_0001
+  user_name: *user_name
+  id_number: *id_number
+  user_id: *user_id
+
+test_bind3Card:
+  data_source_id: *valid_id
+  card_numbers:
+    - lyp_0004
+    - lyp_0005
+    - lyp_0006
+  user_name: *user_name
+  id_number: *id_number
+  user_id: *user_id
+
+test_blacklistCard:
+  data_source_id: *valid_id
+  card_number: lyp_0007
+  user_name: *user_name
+  id_number: *id_number
+  card_status: 5011
+
+test_normalRecharge:
+  data_source_id: *valid_id
+  card_number: lyp_0001
+  card_balance: 10
+
+test_cancelCardRecharge:
+  data_source_id: *valid_id
+  card_number: lyp_0008
+  card_balance: 10
+  card_status: 5012
+
+test_noCardRecharge:
+  data_source_id: *valid_id
+  card_number: lyp_0009
+  card_balance: 10
+
+test_normalConsumption:
+  data_source_id: *valid_id
+  card_number: lyp_0001
+  card_balance: 3
+  user_id: *user_id
+
+test_InsufficientBalance:
+  data_source_id: *valid_id
+  card_number: lyp_0001
+  card_balance: 6
+  user_id: *user_id
+
+test_noCardConsumption:
+  data_source_id: *valid_id
+  card_number: lyp_0010
+  card_balance: 5
+  user_id: *user_id
+
+test_searchRecord:
+  data_source_id: *valid_id
+  card_number: lyp_0001
+  user_id: *user_id
+
+test_searchNoRecord:
+  data_source_id: *valid_id
+  card_number: lyp_0001
+  user_id: *user_id
+
+test_searchNoCard:
+  data_source_id: *valid_id
+  card_number: lyp_0011
+  user_id: *user_id
+
+test_searchNoUser:
+  data_source_id: *valid_id
+  card_number: lyp_0012
+  user_id: 1364316
+
+test_newUesrScenarios:
+  data_source_id: *valid_id
+  card_number: lyp_0013
+  user_id: 5616146
+  user_name: libre0316
+  id_number: 352202199909090906
+  card_balance: 5

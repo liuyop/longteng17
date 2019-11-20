@@ -1,0 +1,5 @@
+2019-11-20 18:18:44 [DEBUG] test_demo1.py[test_logging:60] 调试日志
+2019-11-20 18:18:44 [INFO] test_demo1.py[test_logging:61] fff
+2019-11-20 18:18:44 [WARNING] test_demo1.py[test_logging:62] 警告信息
+2019-11-20 18:18:44 [ERROR] test_demo1.py[test_logging:63] 报错信息
+2019-11-20 18:18:44 [CRITICAL] test_demo1.py[test_logging:64] 严重出错
