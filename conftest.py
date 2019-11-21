@@ -32,5 +32,5 @@ def pytest_terminal_summary(config):
         report_path = config.getoption('htmlpath')
         email_subject = config.getini('email_subject') or 'TestReport'
         email_body = config.getini('email_body') or 'Hi'
-        if email_receivers:
-            Email().send(email_subject, email_receivers, email_body, report_path)
+        # if email_receivers:
+        #     Email().send(email_subject, email_receivers, email_body, report_path)
