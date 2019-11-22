@@ -9,18 +9,14 @@ class AddGoodsPage(object):
         self.driver.switch_to.frame('main-frame')
 
     def input_goods_name(self, goods_name):
-        self.driver.find_element(
-            *self.goods_name_ipt_loc).send_keys(goods_name)
+        self.driver.find_element(*self.goods_name_ipt_loc).send_keys(goods_name)
 
     def input_category_name(self, category_name):
-        self.driver.find_element(
-            *self.category_name_ipt_loc).send_keys(category_name)
+        self.driver.find_element(*self.category_name_ipt_loc).send_keys(category_name)
 
     def input_price(self, price):
-        self.driver.find_element(
-            *self.price_ipt_loc).send_keys(price)
+        self.driver.find_element(*self.price_ipt_loc).send_keys(price)
 
     def click_submit_btn(self):
-        self.driver.find_element(
-            *self.submit_btn_loc).click()
+        self.driver.find_element(*self.submit_btn_loc).click()
 

@@ -2,7 +2,7 @@ import pytest
 import pytest_check as ck
 
 
-@pytest.mark.skip
+@pytest.mark.nondestructive
 @pytest.mark.p1
 @pytest.mark.api
 def test_normalRecharge(api, db, case_data):
@@ -40,7 +40,7 @@ def test_normalRecharge(api, db, case_data):
     ck.equal(balance+cardBalance, db.check_cardBalance(card_number))
 
 
-@pytest.mark.skip
+@pytest.mark.nondestructive
 @pytest.mark.p2
 @pytest.mark.api
 @pytest.mark.negative
@@ -82,7 +82,7 @@ def test_cancelCardRecharge(api, db, case_data):
     db.del_card(card_number)
 
 
-@pytest.mark.skip
+@pytest.mark.nondestructive
 @pytest.mark.p2
 @pytest.mark.api
 @pytest.mark.negative

@@ -2,7 +2,7 @@ import pytest
 import pytest_check as ck
 
 
-@pytest.mark.skip
+@pytest.mark.nondestructive
 @pytest.mark.p1
 @pytest.mark.api
 def test_newUesrScenarios(api, db, case_data):

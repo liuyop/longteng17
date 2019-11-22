@@ -2,7 +2,7 @@
 import pytest_check as ck
 
 
-@pytest.mark.skip
+@pytest.mark.nondestructive
 @pytest.mark.p1
 @pytest.mark.api
 def test_addFuelCard_normal(api, db, case_data):
@@ -32,7 +32,7 @@ def test_addFuelCard_normal(api, db, case_data):
     # db.del_card(card_number)
 
 
-@pytest.mark.skip
+@pytest.mark.nondestructive
 @pytest.mark.p2
 @pytest.mark.api
 @pytest.mark.negative
@@ -59,7 +59,7 @@ def test_dataSourceId_noAuthority(api, db, case_data):
     ck.is_false(db.check_card(card_number))
 
 
-@pytest.mark.skip
+@pytest.mark.nondestructive
 @pytest.mark.p2
 @pytest.mark.api
 @pytest.mark.negative
@@ -84,3 +84,7 @@ def test_methodId_invalid(api, db, case_data):
     ck.is_false(res_dict.get('success'))
     # 数据库断言
     ck.is_false(db.check_card(card_number))
+
+
+# if __name__ == '__main__':
+#     pytest.main(['test_add_fuel_card.py'])

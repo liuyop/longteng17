@@ -1,7 +1,8 @@
 import pytest
 import pytest_check as ck
 
-@pytest.mark.skip
+
+@pytest.mark.nondestructive
 @pytest.mark.p1
 @pytest.mark.api
 def test_searchRecord(api, db, case_data):
@@ -32,7 +33,7 @@ def test_searchRecord(api, db, case_data):
     assert len(res_dict["result"]["rechargeDetails"]) >= 1
 
 
-@pytest.mark.skip
+@pytest.mark.nondestructive
 @pytest.mark.p1
 @pytest.mark.api
 def test_searchNoRecord(api, db, case_data):
@@ -66,7 +67,7 @@ def test_searchNoRecord(api, db, case_data):
     assert len(res_dict["result"]["rechargeDetails"]) == 0
 
 
-@pytest.mark.skip
+@pytest.mark.nondestructive
 @pytest.mark.p2
 @pytest.mark.api
 @pytest.mark.negative
@@ -96,7 +97,7 @@ def test_searchNoCard(api, db, case_data):
     ck.is_false(res_dict.get('success'))
 
 
-@pytest.mark.skip
+@pytest.mark.nondestructive
 @pytest.mark.p2
 @pytest.mark.api
 @pytest.mark.negative

@@ -9,3 +9,12 @@ import os
 #
 #     config.option.log_file = os.path.join(
 #         config.rootdir, 'reports', f'pytest_{now}.log')
+
+# def pytest_addoption(parser):
+#     parser.addoption("--send-email", action="store_true", help="是否发送邮件")
+#
+#
+# def pytest_terminal_summary(config):
+#     if config.getoption("--send-email"):
+#         htmlpath = config.getoption('htmlpath')
+#         Notice().email('正文', '主题', ['ivan-me@163.com'], htmlpath)

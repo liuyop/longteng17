@@ -2,7 +2,7 @@ import pytest
 import pytest_check as ck
 
 
-@pytest.mark.skip
+@pytest.mark.nondestructive
 @pytest.mark.p1
 @pytest.mark.api
 def test_normalConsumption(api, db, case_data):
@@ -40,7 +40,7 @@ def test_normalConsumption(api, db, case_data):
     ck.equal(balance-cardBalance, db.check_cardBalance(card_number))
 
 
-@pytest.mark.skip
+@pytest.mark.nondestructive
 @pytest.mark.p2
 @pytest.mark.api
 @pytest.mark.negative
@@ -76,7 +76,7 @@ def test_InsufficientBalance(api, db, case_data):
     ck.is_false(res_dict.get('success'))
 
 
-@pytest.mark.skip
+@pytest.mark.nondestructive
 @pytest.mark.p2
 @pytest.mark.api
 @pytest.mark.negative
@@ -110,3 +110,7 @@ def test_noCardConsumption(api, db, case_data):
     ck.equal(5013, res_dict.get("code"))
     ck.equal("根据用户ID没有查询到卡号!", res_dict.get("msg"))
     ck.is_false(res_dict.get('success'))
+
+
+# if __name__ == '__main__':
+#     pytest.main(['test_consumption_fuel_card.py'])

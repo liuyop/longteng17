@@ -404,12 +404,18 @@ function filter_table(elem) {
 }
 </script>
     <h1>report.html</h1>
-    <p>Report generated on 20-Nov-2019 at 18:18:44 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v2.0.0</p>
+    <p>Report generated on 22-Nov-2019 at 11:57:00 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v2.0.0</p>
     <h2>Environment</h2>
     <table id="environment">
       <tr>
         <td>Base URL</td>
         <td><a href="http://115.28.108.130:8080" target="_blank">http://115.28.108.130:8080</a></td></tr>
+      <tr>
+        <td>Capabilities</td>
+        <td>{}</td></tr>
+      <tr>
+        <td>Driver</td>
+        <td>chrome</td></tr>
       <tr>
         <td>Packages</td>
         <td>{&apos;pytest&apos;: &apos;5.2.2&apos;, &apos;py&apos;: &apos;1.8.0&apos;, &apos;pluggy&apos;: &apos;0.13.0&apos;}</td></tr>
@@ -418,13 +424,13 @@ function filter_table(elem) {
         <td>Windows-7-6.1.7601-SP1</td></tr>
       <tr>
         <td>Plugins</td>
-        <td>{&apos;base-url&apos;: &apos;1.4.1&apos;, &apos;check&apos;: &apos;0.3.5&apos;, &apos;forked&apos;: &apos;1.1.3&apos;, &apos;html&apos;: &apos;2.0.0&apos;, &apos;metadata&apos;: &apos;1.8.0&apos;, &apos;rerunfailures&apos;: &apos;7.0&apos;, &apos;xdist&apos;: &apos;1.30.0&apos;}</td></tr>
+        <td>{&apos;selenium&apos;: &apos;1.17.0&apos;, &apos;variables&apos;: &apos;1.9.0&apos;, &apos;base-url&apos;: &apos;1.4.1&apos;, &apos;check&apos;: &apos;0.3.5&apos;, &apos;forked&apos;: &apos;1.1.3&apos;, &apos;html&apos;: &apos;2.0.0&apos;, &apos;metadata&apos;: &apos;1.8.0&apos;, &apos;rerunfailures&apos;: &apos;7.0&apos;, &apos;xdist&apos;: &apos;1.30.0&apos;}</td></tr>
       <tr>
         <td>Python</td>
         <td>3.6.7</td></tr></table>
     <h2>Summary</h2>
-    <p>1 tests ran in 0.39 seconds. </p>
-    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="passed">1 passed</span>, <input checked="true" class="filter" data-test-result="skipped" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="skipped">28 skipped</span>, <input checked="true" class="filter" data-test-result="failed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="failed">0 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>, <input checked="true" class="filter" data-test-result="rerun" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="rerun">0 rerun</span>
+    <p>21 tests ran in 56.34 seconds. </p>
+    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="passed">19 passed</span>, <input checked="true" class="filter" data-test-result="skipped" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="skipped">8 skipped</span>, <input checked="true" class="filter" data-test-result="failed" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="failed">2 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>, <input checked="true" class="filter" data-test-result="rerun" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="rerun">0 rerun</span>
     <h2>Results</h2>
     <table id="results-table">
       <thead id="results-table-head">
@@ -435,177 +441,55 @@ function filter_table(elem) {
           <th>Links</th></tr>
         <tr hidden="true" id="not-found-message">
           <th colspan="4">No results found. Try to check the filters</th></tr></thead>
-      <tbody class="skipped results-table-row">
+      <tbody class="failed results-table-row">
         <tr>
-          <td class="col-result">Skipped</td>
-          <td class="col-name">test_cases/api_test/test_add_fuel_card.py::test_addFuelCard_normal::setup</td>
-          <td class="col-duration">0.00</td>
+          <td class="col-result">Failed</td>
+          <td class="col-name">test_cases/api_test/test_bind_fuel_card.py::test_bingFuelCard_normal</td>
+          <td class="col-duration">0.10</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="log">(&#x27;test_cases\\api_test\\test_add_fuel_card.py&#x27;, 4, &#x27;Skipped: unconditional skip&#x27;)<br/></div></td></tr></tbody>
-      <tbody class="skipped results-table-row">
+            <div class="log">api = &lt;utils.api.Api object at 0x03B4D730&gt;, db = &lt;utils.db.FuelCardDB object at 0x03B44F90&gt;<br/>case_data = {&#x27;card_number&#x27;: &#x27;lyp_0001&#x27;, &#x27;data_source_id&#x27;: &#x27;bHRz&#x27;, &#x27;id_number&#x27;: 352202199909090905, &#x27;user_id&#x27;: 1364414, ...}<br/><br/>    @pytest.mark.nondestructive<br/>    @pytest.mark.p1<br/>    @pytest.mark.api<br/>    def test_bingFuelCard_normal(api, db, case_data):<br/>        &quot;&quot;&quot;绑定加油卡&quot;&quot;&quot;<br/>        url = &#x27;/gasStation/process&#x27;<br/>        data_source_id = case_data.get(&#x27;data_source_id&#x27;)<br/>        card_number = case_data.get(&#x27;card_number&#x27;)<br/>        user_name = case_data.get(&#x27;user_name&#x27;)<br/>        id_number = case_data.get(&#x27;id_number&#x27;)<br/>        user_id = case_data.get(&#x27;user_id&#x27;)<br/>    <br/>        # 环境检查<br/>        if db.check_card(card_number):<br/>            print(f&#x27;卡号: {card_number} 已存在&#x27;)<br/>        else:<br/>            db.add_card(card_number)<br/>    <br/>        #接口访问<br/>        json_data = {&quot;dataSourceId&quot;: data_source_id, &quot;methodId&quot;: &quot;01A&quot;, &quot;CardUser&quot;: {&quot;userName&quot;: user_name, &quot;idType&quot;: &quot;1&quot;, &quot;idNumber&quot;: id_number}, &quot;CardInfo&quot;: {&quot;cardNumber&quot;: card_number}}<br/>&gt;       res_dict = api.post(url, json=json_data).json()<br/><br/>test_cases\api_test\test_bind_fuel_card.py:26: <br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ <br/>d:\program files (x86)\python3.6.7\lib\site-packages\requests\models.py:897: in json<br/>    return complexjson.loads(self.text, **kwargs)<br/>d:\program files (x86)\python3.6.7\lib\json\__init__.py:354: in loads<br/>    return _default_decoder.decode(s)<br/>d:\program files (x86)\python3.6.7\lib\json\decoder.py:339: in decode<br/>    obj, end = self.raw_decode(s, idx=_w(s, 0).end())<br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ <br/><br/>self = &lt;json.decoder.JSONDecoder object at 0x02C880D0&gt;<br/>s = &#x27;\r\n\r\n&lt;img src=&quot;/style/images/blue_face/bluefaces_05.png&quot; alt=&quot;资源未找到&quot; /&gt;\r\n&lt;div&gt;错误代码：500&lt;/div&gt;\r\n&lt;div&gt;错误描述：系统内部错误&lt;/div&gt;&lt;script type=&quot;text/javascript&quot; charset=&quot;utf-8&quot;&gt;try{parent.$.messager.progress(\&#x27;close\&#x27;);}catch(e){}&lt;/script&gt;&#x27;<br/>idx = 4<br/><br/>    def raw_decode(self, s, idx=0):<br/>        &quot;&quot;&quot;Decode a JSON document from ``s`` (a ``str`` beginning with<br/>        a JSON document) and return a 2-tuple of the Python<br/>        representation and the index in ``s`` where the document ended.<br/>    <br/>        This can be used to decode a JSON document from a string that may<br/>        have extraneous data at the end.<br/>    <br/>        &quot;&quot;&quot;<br/>        try:<br/>            obj, end = self.scan_once(s, idx)<br/>        except StopIteration as err:<br/>&gt;           raise JSONDecodeError(&quot;Expecting value&quot;, s, err.value) from None<br/><span class="error">E           json.decoder.JSONDecodeError: Expecting value: line 3 column 1 (char 4)</span><br/><br/>d:\program files (x86)\python3.6.7\lib\json\decoder.py:357: JSONDecodeError<br/> ------------------------------Captured stdout call------------------------------ <br/>查询sql: SELECT id FROM cardinfo WHERE cardNumber=&quot;lyp_0001&quot;
+查询数据: [{&#x27;id&#x27;: 742329655}]
+卡号: lyp_0001 已存在
+请求数据: post http://115.28.108.130:8080/gasStation/process {&#x27;json&#x27;: {&#x27;dataSourceId&#x27;: &#x27;bHRz&#x27;, &#x27;methodId&#x27;: &#x27;01A&#x27;, &#x27;CardUser&#x27;: {&#x27;userName&#x27;: &#x27;libre0314&#x27;, &#x27;idType&#x27;: &#x27;1&#x27;, &#x27;idNumber&#x27;: 352202199909090905}, &#x27;CardInfo&#x27;: {&#x27;cardNumber&#x27;: &#x27;lyp_0001&#x27;}}, &#x27;timeout&#x27;: 30}
+响应数据: 
+
+&lt;img src=&quot;/style/images/blue_face/bluefaces_05.png&quot; alt=&quot;资源未找到&quot; /&gt;
+&lt;div&gt;错误代码：500&lt;/div&gt;
+&lt;div&gt;错误描述：系统内部错误&lt;/div&gt;&lt;script type=&quot;text/javascript&quot; charset=&quot;utf-8&quot;&gt;try{parent.$.messager.progress(&#x27;close&#x27;);}catch(e){}&lt;/script&gt;
+<br/> -------------------------------Captured log call-------------------------------- <br/>DEBUG    urllib3.connectionpool:connectionpool.py:437 http://115.28.108.130:8080 &quot;POST /gasStation/process HTTP/1.1&quot; 500 264<br/></div></td></tr></tbody>
+      <tbody class="failed results-table-row">
         <tr>
-          <td class="col-result">Skipped</td>
-          <td class="col-name">test_cases/api_test/test_add_fuel_card.py::test_dataSourceId_noAuthority::setup</td>
-          <td class="col-duration">0.00</td>
+          <td class="col-result">Failed</td>
+          <td class="col-name">test_cases/api_test/test_bind_fuel_card.py::test_bind3Card</td>
+          <td class="col-duration">0.16</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="log">(&#x27;test_cases\\api_test\\test_add_fuel_card.py&#x27;, 34, &#x27;Skipped: unconditional skip&#x27;)<br/></div></td></tr></tbody>
+            <div class="log">api = &lt;utils.api.Api object at 0x03B4D730&gt;, db = &lt;utils.db.FuelCardDB object at 0x03B44F90&gt;<br/>case_data = {&#x27;card_numbers&#x27;: [&#x27;lyp_0004&#x27;, &#x27;lyp_0005&#x27;, &#x27;lyp_0006&#x27;], &#x27;data_source_id&#x27;: &#x27;bHRz&#x27;, &#x27;id_number&#x27;: 352202199909090905, &#x27;user_id&#x27;: 1364414, ...}<br/><br/>    @pytest.mark.nondestructive<br/>    @pytest.mark.p2<br/>    @pytest.mark.api<br/>    @pytest.mark.negative<br/>    def test_bind3Card(api, db, case_data):<br/>        &quot;&quot;&quot;绑定超过2张加油卡&quot;&quot;&quot;<br/>        url = &#x27;/gasStation/process&#x27;<br/>        data_source_id = case_data.get(&#x27;data_source_id&#x27;)<br/>        card_numbers = case_data.get(&#x27;card_numbers&#x27;)<br/>        user_name = case_data.get(&#x27;user_name&#x27;)<br/>        id_number = case_data.get(&#x27;id_number&#x27;)<br/>        user_id = case_data.get(&#x27;user_id&#x27;)<br/>    <br/>        # 数据准备<br/>        for i in card_numbers:<br/>            db.add_card(i)<br/>            if db.check_card_total(user_id) &lt;= 1:<br/>                db.bind_card(i, user_id)<br/>            else:<br/>                break<br/>    <br/>        json_data = {<br/>            &quot;dataSourceId&quot;: data_source_id,<br/>            &quot;methodId&quot;: &quot;01A&quot;,<br/>                     &quot;CardUser&quot;: {<br/>                         &quot;userName&quot;: user_name,<br/>                         &quot;idType&quot;: &quot;1&quot;,<br/>                         &quot;idNumber&quot;: id_number<br/>                     },<br/>                     &quot;CardInfo&quot;: {<br/>                         &quot;cardNumber&quot;: case_data.get(&#x27;card_numbers&#x27;)[2]<br/>                     }<br/>        }<br/>&gt;       res_dict = api.post(url, json=json_data).json()<br/><br/>test_cases\api_test\test_bind_fuel_card.py:69: <br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ <br/>d:\program files (x86)\python3.6.7\lib\site-packages\requests\models.py:897: in json<br/>    return complexjson.loads(self.text, **kwargs)<br/>d:\program files (x86)\python3.6.7\lib\json\__init__.py:354: in loads<br/>    return _default_decoder.decode(s)<br/>d:\program files (x86)\python3.6.7\lib\json\decoder.py:339: in decode<br/>    obj, end = self.raw_decode(s, idx=_w(s, 0).end())<br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ <br/><br/>self = &lt;json.decoder.JSONDecoder object at 0x02C880D0&gt;<br/>s = &#x27;\r\n\r\n&lt;img src=&quot;/style/images/blue_face/bluefaces_05.png&quot; alt=&quot;资源未找到&quot; /&gt;\r\n&lt;div&gt;错误代码：500&lt;/div&gt;\r\n&lt;div&gt;错误描述：系统内部错误&lt;/div&gt;&lt;script type=&quot;text/javascript&quot; charset=&quot;utf-8&quot;&gt;try{parent.$.messager.progress(\&#x27;close\&#x27;);}catch(e){}&lt;/script&gt;&#x27;<br/>idx = 4<br/><br/>    def raw_decode(self, s, idx=0):<br/>        &quot;&quot;&quot;Decode a JSON document from ``s`` (a ``str`` beginning with<br/>        a JSON document) and return a 2-tuple of the Python<br/>        representation and the index in ``s`` where the document ended.<br/>    <br/>        This can be used to decode a JSON document from a string that may<br/>        have extraneous data at the end.<br/>    <br/>        &quot;&quot;&quot;<br/>        try:<br/>            obj, end = self.scan_once(s, idx)<br/>        except StopIteration as err:<br/>&gt;           raise JSONDecodeError(&quot;Expecting value&quot;, s, err.value) from None<br/><span class="error">E           json.decoder.JSONDecodeError: Expecting value: line 3 column 1 (char 4)</span><br/><br/>d:\program files (x86)\python3.6.7\lib\json\decoder.py:357: JSONDecodeError<br/> ------------------------------Captured stdout call------------------------------ <br/>执行sql: INSERT INTO cardinfo (cardNumber) VALUES (&quot;lyp_0004&quot;)
+查询sql: SELECT id FROM cardinfo WHERE userId=&quot;1364414&quot;
+查询数据: [{&#x27;id&#x27;: 742329655}, {&#x27;id&#x27;: 742329656}, {&#x27;id&#x27;: 742329657}]
+请求数据: post http://115.28.108.130:8080/gasStation/process {&#x27;json&#x27;: {&#x27;dataSourceId&#x27;: &#x27;bHRz&#x27;, &#x27;methodId&#x27;: &#x27;01A&#x27;, &#x27;CardUser&#x27;: {&#x27;userName&#x27;: &#x27;libre0314&#x27;, &#x27;idType&#x27;: &#x27;1&#x27;, &#x27;idNumber&#x27;: 352202199909090905}, &#x27;CardInfo&#x27;: {&#x27;cardNumber&#x27;: &#x27;lyp_0006&#x27;}}, &#x27;timeout&#x27;: 30}
+响应数据: 
+
+&lt;img src=&quot;/style/images/blue_face/bluefaces_05.png&quot; alt=&quot;资源未找到&quot; /&gt;
+&lt;div&gt;错误代码：500&lt;/div&gt;
+&lt;div&gt;错误描述：系统内部错误&lt;/div&gt;&lt;script type=&quot;text/javascript&quot; charset=&quot;utf-8&quot;&gt;try{parent.$.messager.progress(&#x27;close&#x27;);}catch(e){}&lt;/script&gt;
+<br/> -------------------------------Captured log call-------------------------------- <br/>DEBUG    urllib3.connectionpool:connectionpool.py:266 Resetting dropped connection: 115.28.108.130
+DEBUG    urllib3.connectionpool:connectionpool.py:437 http://115.28.108.130:8080 &quot;POST /gasStation/process HTTP/1.1&quot; 500 264<br/></div></td></tr></tbody>
       <tbody class="skipped results-table-row">
         <tr>
           <td class="col-result">Skipped</td>
-          <td class="col-name">test_cases/api_test/test_add_fuel_card.py::test_methodId_invalid::setup</td>
-          <td class="col-duration">0.00</td>
+          <td class="col-name">test_cases/api_test/test_add_fuel_card.py::test_addFuelCard_normal</td>
+          <td class="col-duration">0.04</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="log">(&#x27;test_cases\\api_test\\test_add_fuel_card.py&#x27;, 61, &#x27;Skipped: unconditional skip&#x27;)<br/></div></td></tr></tbody>
-      <tbody class="skipped results-table-row">
-        <tr>
-          <td class="col-result">Skipped</td>
-          <td class="col-name">test_cases/api_test/test_bind_fuel_card.py::test_bingFuelCard_normal::setup</td>
-          <td class="col-duration">0.00</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="log">(&#x27;test_cases\\api_test\\test_bind_fuel_card.py&#x27;, 5, &#x27;Skipped: unconditional skip&#x27;)<br/></div></td></tr></tbody>
-      <tbody class="skipped results-table-row">
-        <tr>
-          <td class="col-result">Skipped</td>
-          <td class="col-name">test_cases/api_test/test_bind_fuel_card.py::test_bind3Card::setup</td>
-          <td class="col-duration">0.00</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="log">(&#x27;test_cases\\api_test\\test_bind_fuel_card.py&#x27;, 35, &#x27;Skipped: unconditional skip&#x27;)<br/></div></td></tr></tbody>
-      <tbody class="skipped results-table-row">
-        <tr>
-          <td class="col-result">Skipped</td>
-          <td class="col-name">test_cases/api_test/test_bind_fuel_card.py::test_blacklistCard::setup</td>
-          <td class="col-duration">0.00</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="log">(&#x27;test_cases\\api_test\\test_bind_fuel_card.py&#x27;, 79, &#x27;Skipped: unconditional skip&#x27;)<br/></div></td></tr></tbody>
-      <tbody class="skipped results-table-row">
-        <tr>
-          <td class="col-result">Skipped</td>
-          <td class="col-name">test_cases/api_test/test_consumption_fuel_card.py::test_normalConsumption::setup</td>
-          <td class="col-duration">0.00</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="log">(&#x27;test_cases\\api_test\\test_consumption_fuel_card.py&#x27;, 4, &#x27;Skipped: unconditional skip&#x27;)<br/></div></td></tr></tbody>
-      <tbody class="skipped results-table-row">
-        <tr>
-          <td class="col-result">Skipped</td>
-          <td class="col-name">test_cases/api_test/test_consumption_fuel_card.py::test_InsufficientBalance::setup</td>
-          <td class="col-duration">0.00</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="log">(&#x27;test_cases\\api_test\\test_consumption_fuel_card.py&#x27;, 42, &#x27;Skipped: unconditional skip&#x27;)<br/></div></td></tr></tbody>
-      <tbody class="skipped results-table-row">
-        <tr>
-          <td class="col-result">Skipped</td>
-          <td class="col-name">test_cases/api_test/test_consumption_fuel_card.py::test_noCardConsumption::setup</td>
-          <td class="col-duration">0.00</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="log">(&#x27;test_cases\\api_test\\test_consumption_fuel_card.py&#x27;, 78, &#x27;Skipped: unconditional skip&#x27;)<br/></div></td></tr></tbody>
-      <tbody class="skipped results-table-row">
-        <tr>
-          <td class="col-result">Skipped</td>
-          <td class="col-name">test_cases/api_test/test_newScenarios_fuel_card.py::test_newUesrScenarios::setup</td>
-          <td class="col-duration">0.00</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="log">(&#x27;test_cases\\api_test\\test_newScenarios_fuel_card.py&#x27;, 4, &#x27;Skipped: unconditional skip&#x27;)<br/></div></td></tr></tbody>
-      <tbody class="skipped results-table-row">
-        <tr>
-          <td class="col-result">Skipped</td>
-          <td class="col-name">test_cases/api_test/test_recharge_fuel_card.py::test_normalRecharge::setup</td>
-          <td class="col-duration">0.00</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="log">(&#x27;test_cases\\api_test\\test_recharge_fuel_card.py&#x27;, 4, &#x27;Skipped: unconditional skip&#x27;)<br/></div></td></tr></tbody>
-      <tbody class="skipped results-table-row">
-        <tr>
-          <td class="col-result">Skipped</td>
-          <td class="col-name">test_cases/api_test/test_recharge_fuel_card.py::test_cancelCardRecharge::setup</td>
-          <td class="col-duration">0.00</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="log">(&#x27;test_cases\\api_test\\test_recharge_fuel_card.py&#x27;, 42, &#x27;Skipped: unconditional skip&#x27;)<br/></div></td></tr></tbody>
-      <tbody class="skipped results-table-row">
-        <tr>
-          <td class="col-result">Skipped</td>
-          <td class="col-name">test_cases/api_test/test_recharge_fuel_card.py::test_noCardRecharge::setup</td>
-          <td class="col-duration">0.00</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="log">(&#x27;test_cases\\api_test\\test_recharge_fuel_card.py&#x27;, 84, &#x27;Skipped: unconditional skip&#x27;)<br/></div></td></tr></tbody>
-      <tbody class="skipped results-table-row">
-        <tr>
-          <td class="col-result">Skipped</td>
-          <td class="col-name">test_cases/api_test/test_search_fuel_card.py::test_searchRecord::setup</td>
-          <td class="col-duration">0.00</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="log">(&#x27;test_cases\\api_test\\test_search_fuel_card.py&#x27;, 3, &#x27;Skipped: unconditional skip&#x27;)<br/></div></td></tr></tbody>
-      <tbody class="skipped results-table-row">
-        <tr>
-          <td class="col-result">Skipped</td>
-          <td class="col-name">test_cases/api_test/test_search_fuel_card.py::test_searchNoRecord::setup</td>
-          <td class="col-duration">0.00</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="log">(&#x27;test_cases\\api_test\\test_search_fuel_card.py&#x27;, 34, &#x27;Skipped: unconditional skip&#x27;)<br/></div></td></tr></tbody>
-      <tbody class="skipped results-table-row">
-        <tr>
-          <td class="col-result">Skipped</td>
-          <td class="col-name">test_cases/api_test/test_search_fuel_card.py::test_searchNoCard::setup</td>
-          <td class="col-duration">0.00</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="log">(&#x27;test_cases\\api_test\\test_search_fuel_card.py&#x27;, 68, &#x27;Skipped: unconditional skip&#x27;)<br/></div></td></tr></tbody>
-      <tbody class="skipped results-table-row">
-        <tr>
-          <td class="col-result">Skipped</td>
-          <td class="col-name">test_cases/api_test/test_search_fuel_card.py::test_searchNoUser::setup</td>
-          <td class="col-duration">0.00</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="log">(&#x27;test_cases\\api_test\\test_search_fuel_card.py&#x27;, 98, &#x27;Skipped: unconditional skip&#x27;)<br/></div></td></tr></tbody>
-      <tbody class="skipped results-table-row">
-        <tr>
-          <td class="col-result">Skipped</td>
-          <td class="col-name">test_cases/app_test/test_wechat.py::test_login::setup</td>
-          <td class="col-duration">0.00</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="log">(&#x27;test_cases\\app_test\\test_wechat.py&#x27;, 2, &#x27;Skipped: unconditional skip&#x27;)<br/></div></td></tr></tbody>
-      <tbody class="skipped results-table-row">
-        <tr>
-          <td class="col-result">Skipped</td>
-          <td class="col-name">test_cases/app_test/test_wechat.py::test_online::setup</td>
-          <td class="col-duration">0.00</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="log">(&#x27;test_cases\\app_test\\test_wechat.py&#x27;, 7, &#x27;Skipped: unconditional skip&#x27;)<br/></div></td></tr></tbody>
+            <div class="log">(&#x27;F:\\PythonAutomation\\longteng17\\test_cases\\api_test\\test_add_fuel_card.py&#x27;, 16, &#x27;Skipped: 卡号: lyp_0001 已存在&#x27;)<br/> -------------------------------Captured log setup------------------------------- <br/>DEBUG    urllib3.connectionpool:connectionpool.py:225 Starting new HTTP connection (1): 115.28.108.130:8080
+DEBUG    urllib3.connectionpool:connectionpool.py:437 http://115.28.108.130:8080 &quot;GET / HTTP/1.1&quot; 200 264<br/> ------------------------------Captured stdout call------------------------------ <br/>查询sql: SELECT id FROM cardinfo WHERE cardNumber=&quot;lyp_0001&quot;
+查询数据: [{&#x27;id&#x27;: 742329655}]
+<br/></div></td></tr></tbody>
       <tbody class="skipped results-table-row">
         <tr>
           <td class="col-result">Skipped</td>
@@ -614,7 +498,7 @@ function filter_table(elem) {
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="log">(&#x27;test_cases\\web_test\\test_demo1.py&#x27;, 3, &#x27;Skipped: unconditional skip&#x27;)<br/></div></td></tr></tbody>
+            <div class="log">(&#x27;test_cases\\web_test\\test_demo1.py&#x27;, 6, &#x27;Skipped: unconditional skip&#x27;)<br/></div></td></tr></tbody>
       <tbody class="skipped results-table-row">
         <tr>
           <td class="col-result">Skipped</td>
@@ -623,16 +507,7 @@ function filter_table(elem) {
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="log">(&#x27;test_cases\\web_test\\test_demo1.py&#x27;, 9, &#x27;Skipped: unconditional skip&#x27;)<br/></div></td></tr></tbody>
-      <tbody class="skipped results-table-row">
-        <tr>
-          <td class="col-result">Skipped</td>
-          <td class="col-name">test_cases/web_test/test_demo1.py::test_baidu3::setup</td>
-          <td class="col-duration">0.00</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="log">(&#x27;test_cases\\web_test\\test_demo1.py&#x27;, 17, &#x27;Skipped: unconditional skip&#x27;)<br/></div></td></tr></tbody>
+            <div class="log">(&#x27;test_cases\\web_test\\test_demo1.py&#x27;, 13, &#x27;Skipped: unconditional skip&#x27;)<br/></div></td></tr></tbody>
       <tbody class="skipped results-table-row">
         <tr>
           <td class="col-result">Skipped</td>
@@ -641,16 +516,7 @@ function filter_table(elem) {
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="log">(&#x27;test_cases\\web_test\\test_demo1.py&#x27;, 22, &#x27;Skipped: unconditional skip&#x27;)<br/></div></td></tr></tbody>
-      <tbody class="skipped results-table-row">
-        <tr>
-          <td class="col-result">Skipped</td>
-          <td class="col-name">test_cases/web_test/test_demo1.py::test_ecshop_login2::setup</td>
-          <td class="col-duration">0.00</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="log">(&#x27;test_cases\\web_test\\test_demo1.py&#x27;, 30, &#x27;Skipped: unconditional skip&#x27;)<br/></div></td></tr></tbody>
+            <div class="log">(&#x27;test_cases\\web_test\\test_demo1.py&#x27;, 21, &#x27;Skipped: unconditional skip&#x27;)<br/></div></td></tr></tbody>
       <tbody class="skipped results-table-row">
         <tr>
           <td class="col-result">Skipped</td>
@@ -659,7 +525,7 @@ function filter_table(elem) {
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="log">(&#x27;test_cases\\web_test\\test_demo1.py&#x27;, 35, &#x27;Skipped: unconditional skip&#x27;)<br/></div></td></tr></tbody>
+            <div class="log">(&#x27;test_cases\\web_test\\test_demo1.py&#x27;, 29, &#x27;Skipped: unconditional skip&#x27;)<br/></div></td></tr></tbody>
       <tbody class="skipped results-table-row">
         <tr>
           <td class="col-result">Skipped</td>
@@ -668,7 +534,7 @@ function filter_table(elem) {
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="log">(&#x27;test_cases\\web_test\\test_demo1.py&#x27;, 47, &#x27;Skipped: unconditional skip&#x27;)<br/></div></td></tr></tbody>
+            <div class="log">(&#x27;test_cases\\web_test\\test_demo1.py&#x27;, 53, &#x27;Skipped: unconditional skip&#x27;)<br/></div></td></tr></tbody>
       <tbody class="skipped results-table-row">
         <tr>
           <td class="col-result">Skipped</td>
@@ -677,7 +543,7 @@ function filter_table(elem) {
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="log">(&#x27;test_cases\\web_test\\test_demo1.py&#x27;, 51, &#x27;Skipped: unconditional skip&#x27;)<br/></div></td></tr></tbody>
+            <div class="log">(&#x27;test_cases\\web_test\\test_demo1.py&#x27;, 59, &#x27;Skipped: unconditional skip&#x27;)<br/></div></td></tr></tbody>
       <tbody class="skipped results-table-row">
         <tr>
           <td class="col-result">Skipped</td>
@@ -690,13 +556,427 @@ function filter_table(elem) {
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
-          <td class="col-name">test_cases/web_test/test_demo1.py::test_logging</td>
-          <td class="col-duration">0.00</td>
+          <td class="col-name">test_cases/api_test/test_add_fuel_card.py::test_dataSourceId_noAuthority</td>
+          <td class="col-duration">0.17</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>DEBUG    root:test_demo1.py:60 调试日志
-INFO     root:test_demo1.py:61 fff
-WARNING  root:test_demo1.py:62 警告信息
-ERROR    root:test_demo1.py:63 报错信息
-CRITICAL root:test_demo1.py:64 严重出错<br/></div></td></tr></tbody></table></body></html>
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>查询sql: SELECT id FROM cardinfo WHERE cardNumber=&quot;lyp_0002&quot;
+查询数据: ()
+请求数据: post http://115.28.108.130:8080/gasStation/process {&#x27;json&#x27;: {&#x27;dataSourceId&#x27;: &#x27;bHRjczEx&#x27;, &#x27;methodId&#x27;: &#x27;00A&#x27;, &#x27;CardInfo&#x27;: {&#x27;cardNumber&#x27;: &#x27;lyp_0002&#x27;}}, &#x27;timeout&#x27;: 30}
+响应数据: {&quot;code&quot;:100,&quot;msg&quot;:&quot;对不起,您的第三方机构无权限访问该接口&quot;,&quot;success&quot;:false}
+查询sql: SELECT id FROM cardinfo WHERE cardNumber=&quot;lyp_0002&quot;
+查询数据: ()
+<br/> -------------------------------Captured log call-------------------------------- <br/>DEBUG    urllib3.connectionpool:connectionpool.py:225 Starting new HTTP connection (1): 115.28.108.130:8080
+DEBUG    urllib3.connectionpool:connectionpool.py:437 http://115.28.108.130:8080 &quot;POST /gasStation/process HTTP/1.1&quot; 200 None<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_cases/api_test/test_add_fuel_card.py::test_methodId_invalid</td>
+          <td class="col-duration">0.12</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>查询sql: SELECT id FROM cardinfo WHERE cardNumber=&quot;lyp_0003&quot;
+查询数据: ()
+请求数据: post http://115.28.108.130:8080/gasStation/process {&#x27;json&#x27;: {&#x27;dataSourceId&#x27;: &#x27;bHRz&#x27;, &#x27;methodId&#x27;: &#x27;05A&#x27;, &#x27;CardInfo&#x27;: {&#x27;cardNumber&#x27;: &#x27;lyp_0003&#x27;}}, &#x27;timeout&#x27;: 30}
+响应数据: {&quot;code&quot;:199,&quot;msg&quot;:&quot;业务ID无效&quot;,&quot;success&quot;:false}
+查询sql: SELECT id FROM cardinfo WHERE cardNumber=&quot;lyp_0003&quot;
+查询数据: ()
+<br/> -------------------------------Captured log call-------------------------------- <br/>DEBUG    urllib3.connectionpool:connectionpool.py:437 http://115.28.108.130:8080 &quot;POST /gasStation/process HTTP/1.1&quot; 200 None<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_cases/api_test/test_bind_fuel_card.py::test_blacklistCard</td>
+          <td class="col-duration">0.24</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>查询sql: SELECT id FROM cardinfo WHERE cardNumber=&quot;lyp_0007&quot;
+查询数据: ()
+执行sql: INSERT INTO cardinfo (cardNumber) VALUES (&quot;lyp_0007&quot;)
+执行sql: UPDATE cardinfo SET cardstatus=&quot;5011&quot; WHERE cardNumber=&quot;lyp_0007&quot;
+请求数据: post http://115.28.108.130:8080/gasStation/process {&#x27;json&#x27;: {&#x27;dataSourceId&#x27;: &#x27;bHRz&#x27;, &#x27;methodId&#x27;: &#x27;01A&#x27;, &#x27;CardUser&#x27;: {&#x27;userName&#x27;: &#x27;libre0314&#x27;, &#x27;idType&#x27;: &#x27;1&#x27;, &#x27;idNumber&#x27;: 352202199909090905}, &#x27;CardInfo&#x27;: {&#x27;cardNumber&#x27;: &#x27;lyp_0007&#x27;}}, &#x27;timeout&#x27;: 30}
+响应数据: {&quot;code&quot;:5011,&quot;msg&quot;:&quot;卡号是否黑名单,无法绑定&quot;,&quot;success&quot;:false}
+执行sql: DELETE FROM cardinfo WHERE cardNumber=&quot;lyp_0007&quot;
+<br/> -------------------------------Captured log call-------------------------------- <br/>DEBUG    urllib3.connectionpool:connectionpool.py:266 Resetting dropped connection: 115.28.108.130
+DEBUG    urllib3.connectionpool:connectionpool.py:437 http://115.28.108.130:8080 &quot;POST /gasStation/process HTTP/1.1&quot; 200 None<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_cases/api_test/test_consumption_fuel_card.py::test_normalConsumption</td>
+          <td class="col-duration">0.13</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>查询sql: SELECT cardBalance FROM cardinfo WHERE cardNumber=&quot;lyp_0001&quot;
+查询数据: [{&#x27;cardBalance&#x27;: &#x27;15&#x27;}]
+请求数据: post http://115.28.108.130:8080/gasStation/process {&#x27;json&#x27;: {&#x27;dataSourceId&#x27;: &#x27;bHRz&#x27;, &#x27;methodId&#x27;: &#x27;04A&#x27;, &#x27;CardUser&#x27;: {&#x27;userId&#x27;: 1364414}, &#x27;CardInfo&#x27;: {&#x27;cardNumber&#x27;: &#x27;lyp_0001&#x27;, &#x27;cardBalance&#x27;: 3}}, &#x27;timeout&#x27;: 30}
+响应数据: {&quot;code&quot;:200,&quot;msg&quot;:&quot;消费成功!&quot;,&quot;success&quot;:true}
+查询sql: SELECT cardBalance FROM cardinfo WHERE cardNumber=&quot;lyp_0001&quot;
+查询数据: [{&#x27;cardBalance&#x27;: &#x27;12&#x27;}]
+<br/> -------------------------------Captured log call-------------------------------- <br/>DEBUG    urllib3.connectionpool:connectionpool.py:437 http://115.28.108.130:8080 &quot;POST /gasStation/process HTTP/1.1&quot; 200 None<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_cases/api_test/test_consumption_fuel_card.py::test_InsufficientBalance</td>
+          <td class="col-duration">0.13</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>查询sql: SELECT cardBalance FROM cardinfo WHERE cardNumber=&quot;lyp_0001&quot;
+查询数据: [{&#x27;cardBalance&#x27;: &#x27;12&#x27;}]
+执行sql: UPDATE cardinfo SET cardBalance =6-1  WHERE cardNumber=&quot;lyp_0001&quot;
+请求数据: post http://115.28.108.130:8080/gasStation/process {&#x27;json&#x27;: {&#x27;dataSourceId&#x27;: &#x27;bHRz&#x27;, &#x27;methodId&#x27;: &#x27;04A&#x27;, &#x27;CardUser&#x27;: {&#x27;userId&#x27;: 1364414}, &#x27;CardInfo&#x27;: {&#x27;cardNumber&#x27;: &#x27;lyp_0001&#x27;, &#x27;cardBalance&#x27;: 6}}, &#x27;timeout&#x27;: 30}
+响应数据: {&quot;code&quot;:200,&quot;msg&quot;:&quot;对不起，您的余额不足，请充值!&quot;,&quot;success&quot;:false}
+<br/> -------------------------------Captured log call-------------------------------- <br/>DEBUG    urllib3.connectionpool:connectionpool.py:437 http://115.28.108.130:8080 &quot;POST /gasStation/process HTTP/1.1&quot; 200 None<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_cases/api_test/test_consumption_fuel_card.py::test_noCardConsumption</td>
+          <td class="col-duration">0.09</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>查询sql: SELECT id FROM cardinfo WHERE cardNumber=&quot;lyp_0010&quot;
+查询数据: ()
+请求数据: post http://115.28.108.130:8080/gasStation/process {&#x27;json&#x27;: {&#x27;dataSourceId&#x27;: &#x27;bHRz&#x27;, &#x27;methodId&#x27;: &#x27;04A&#x27;, &#x27;CardUser&#x27;: {&#x27;userId&#x27;: 1364414}, &#x27;CardInfo&#x27;: {&#x27;cardNumber&#x27;: &#x27;lyp_0010&#x27;, &#x27;cardBalance&#x27;: 5}}, &#x27;timeout&#x27;: 30}
+响应数据: {&quot;code&quot;:5013,&quot;msg&quot;:&quot;根据用户ID没有查询到卡号!&quot;,&quot;success&quot;:false}
+<br/> -------------------------------Captured log call-------------------------------- <br/>DEBUG    urllib3.connectionpool:connectionpool.py:437 http://115.28.108.130:8080 &quot;POST /gasStation/process HTTP/1.1&quot; 200 None<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_cases/api_test/test_newScenarios_fuel_card.py::test_newUesrScenarios</td>
+          <td class="col-duration">0.61</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>请求数据: post http://115.28.108.130:8080/gasStation/process {&#x27;json&#x27;: {&#x27;dataSourceId&#x27;: &#x27;bHRz&#x27;, &#x27;methodId&#x27;: &#x27;00A&#x27;, &#x27;CardInfo&#x27;: {&#x27;cardNumber&#x27;: &#x27;lyp_0013&#x27;}}, &#x27;timeout&#x27;: 30}
+响应数据: {&quot;code&quot;:200,&quot;msg&quot;:&quot;添加卡成功&quot;,&quot;success&quot;:false}
+查询sql: SELECT id FROM cardinfo WHERE cardNumber=&quot;lyp_0013&quot;
+查询数据: [{&#x27;id&#x27;: 742329737}]
+请求数据: post http://115.28.108.130:8080/gasStation/process {&#x27;json&#x27;: {&#x27;dataSourceId&#x27;: &#x27;bHRz&#x27;, &#x27;methodId&#x27;: &#x27;01A&#x27;, &#x27;CardUser&#x27;: {&#x27;userName&#x27;: &#x27;libre0316&#x27;, &#x27;idType&#x27;: &#x27;1&#x27;, &#x27;idNumber&#x27;: 352202199909090906}, &#x27;CardInfo&#x27;: {&#x27;cardNumber&#x27;: &#x27;lyp_0013&#x27;}}, &#x27;timeout&#x27;: 30}
+响应数据: {&quot;code&quot;:5010,&quot;msg&quot;:&quot;绑定成功&quot;,&quot;result&quot;:{&quot;UserId&quot;:5616146},&quot;success&quot;:true}
+查询sql: SELECT id FROM cardinfo WHERE cardNumber=&quot;lyp_0013&quot; and userId=&quot;5616146&quot;
+查询数据: [{&#x27;id&#x27;: 742329737}]
+查询sql: SELECT cardBalance FROM cardinfo WHERE cardNumber=&quot;lyp_0013&quot;
+查询数据: [{&#x27;cardBalance&#x27;: &#x27;0&#x27;}]
+请求数据: post http://115.28.108.130:8080/gasStation/process {&#x27;json&#x27;: {&#x27;dataSourceId&#x27;: &#x27;bHRz&#x27;, &#x27;methodId&#x27;: &#x27;03A&#x27;, &#x27;CardInfo&#x27;: {&#x27;cardNumber&#x27;: &#x27;lyp_0013&#x27;, &#x27;cardBalance&#x27;: 5}}, &#x27;timeout&#x27;: 30}
+响应数据: {&quot;code&quot;:200,&quot;msg&quot;:&quot;充值成功&quot;,&quot;result&quot;:{&quot;cardBalance&quot;:&quot;5&quot;,&quot;cardNumber&quot;:&quot;lyp_0013&quot;,&quot;cardStatus&quot;:5010,&quot;id&quot;:742329737,&quot;userId&quot;:5616146},&quot;success&quot;:true}
+查询sql: SELECT cardBalance FROM cardinfo WHERE cardNumber=&quot;lyp_0013&quot;
+查询数据: [{&#x27;cardBalance&#x27;: &#x27;5&#x27;}]
+查询sql: SELECT cardBalance FROM cardinfo WHERE cardNumber=&quot;lyp_0013&quot;
+查询数据: [{&#x27;cardBalance&#x27;: &#x27;5&#x27;}]
+请求数据: post http://115.28.108.130:8080/gasStation/process {&#x27;json&#x27;: {&#x27;dataSourceId&#x27;: &#x27;bHRz&#x27;, &#x27;methodId&#x27;: &#x27;04A&#x27;, &#x27;CardUser&#x27;: {&#x27;userId&#x27;: 5616146}, &#x27;CardInfo&#x27;: {&#x27;cardNumber&#x27;: &#x27;lyp_0013&#x27;, &#x27;cardBalance&#x27;: 5}}, &#x27;timeout&#x27;: 30}
+响应数据: {&quot;code&quot;:200,&quot;msg&quot;:&quot;消费成功!&quot;,&quot;success&quot;:true}
+查询sql: SELECT cardBalance FROM cardinfo WHERE cardNumber=&quot;lyp_0013&quot;
+查询数据: [{&#x27;cardBalance&#x27;: &#x27;0&#x27;}]
+请求数据: get http://115.28.108.130:8080/gasStation/process {&#x27;params&#x27;: {&#x27;dataSourceId&#x27;: &#x27;bHRz&#x27;, &#x27;methodId&#x27;: &#x27;02A&#x27;, &#x27;userId&#x27;: 5616146, &#x27;cardNumber&#x27;: &#x27;lyp_0013&#x27;}, &#x27;timeout&#x27;: 30}
+响应数据: {&quot;code&quot;:200,&quot;msg&quot;:&quot;成功返回&quot;,&quot;result&quot;:{&quot;cardBalance&quot;:&quot;0&quot;,&quot;cardNumber&quot;:&quot;lyp_0013&quot;,&quot;cardStatus&quot;:&quot;已经被绑定,正常使用中&quot;,&quot;consumptionDetails&quot;:[&quot;消费金额:5,时间:2019-11-22 11:56:06&quot;],&quot;rechargeDetails&quot;:[&quot;充值金额:5,时间:2019-11-22 11:56:06&quot;]},&quot;success&quot;:true}
+执行sql: DELETE FROM cardinfo WHERE cardNumber=&quot;lyp_0013&quot;
+执行sql: DELETE FROM consumptiondetails WHERE cardNumber=&quot;lyp_0013&quot;
+执行sql: DELETE FROM rechargedetails WHERE cardNumber=&quot;lyp_0013&quot;
+<br/> -------------------------------Captured log call-------------------------------- <br/>DEBUG    urllib3.connectionpool:connectionpool.py:437 http://115.28.108.130:8080 &quot;POST /gasStation/process HTTP/1.1&quot; 200 None
+DEBUG    urllib3.connectionpool:connectionpool.py:437 http://115.28.108.130:8080 &quot;POST /gasStation/process HTTP/1.1&quot; 200 None
+DEBUG    urllib3.connectionpool:connectionpool.py:437 http://115.28.108.130:8080 &quot;POST /gasStation/process HTTP/1.1&quot; 200 None
+DEBUG    urllib3.connectionpool:connectionpool.py:437 http://115.28.108.130:8080 &quot;POST /gasStation/process HTTP/1.1&quot; 200 None
+DEBUG    urllib3.connectionpool:connectionpool.py:437 http://115.28.108.130:8080 &quot;GET /gasStation/process?dataSourceId=bHRz&amp;methodId=02A&amp;userId=5616146&amp;cardNumber=lyp_0013 HTTP/1.1&quot; 200 None<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_cases/api_test/test_recharge_fuel_card.py::test_normalRecharge</td>
+          <td class="col-duration">0.17</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>查询sql: SELECT id FROM cardinfo WHERE cardNumber=&quot;lyp_0001&quot;
+查询数据: [{&#x27;id&#x27;: 742329655}]
+卡号: lyp_0001 已存在
+查询sql: SELECT cardBalance FROM cardinfo WHERE cardNumber=&quot;lyp_0001&quot;
+查询数据: [{&#x27;cardBalance&#x27;: &#x27;5&#x27;}]
+充值前卡余额: 5
+请求数据: post http://115.28.108.130:8080/gasStation/process {&#x27;json&#x27;: {&#x27;dataSourceId&#x27;: &#x27;bHRz&#x27;, &#x27;methodId&#x27;: &#x27;03A&#x27;, &#x27;CardInfo&#x27;: {&#x27;cardNumber&#x27;: &#x27;lyp_0001&#x27;, &#x27;cardBalance&#x27;: 10}}, &#x27;timeout&#x27;: 30}
+响应数据: {&quot;code&quot;:200,&quot;msg&quot;:&quot;充值成功&quot;,&quot;result&quot;:{&quot;cardBalance&quot;:&quot;15&quot;,&quot;cardNumber&quot;:&quot;lyp_0001&quot;,&quot;cardStatus&quot;:0,&quot;id&quot;:742329655,&quot;userId&quot;:1364414},&quot;success&quot;:true}
+查询sql: SELECT cardBalance FROM cardinfo WHERE cardNumber=&quot;lyp_0001&quot;
+查询数据: [{&#x27;cardBalance&#x27;: &#x27;15&#x27;}]
+<br/> -------------------------------Captured log call-------------------------------- <br/>DEBUG    urllib3.connectionpool:connectionpool.py:437 http://115.28.108.130:8080 &quot;POST /gasStation/process HTTP/1.1&quot; 200 None<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_cases/api_test/test_recharge_fuel_card.py::test_cancelCardRecharge</td>
+          <td class="col-duration">0.25</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>查询sql: SELECT id FROM cardinfo WHERE cardNumber=&quot;lyp_0008&quot;
+查询数据: ()
+执行sql: INSERT INTO cardinfo (cardNumber) VALUES (&quot;lyp_0008&quot;)
+执行sql: UPDATE cardinfo SET cardstatus=&quot;5012&quot; WHERE cardNumber=&quot;lyp_0008&quot;
+查询sql: SELECT cardBalance FROM cardinfo WHERE cardNumber=&quot;lyp_0008&quot;
+查询数据: [{&#x27;cardBalance&#x27;: &#x27;0&#x27;}]
+充值前卡余额: 0
+请求数据: post http://115.28.108.130:8080/gasStation/process {&#x27;json&#x27;: {&#x27;dataSourceId&#x27;: &#x27;bHRz&#x27;, &#x27;methodId&#x27;: &#x27;03A&#x27;, &#x27;CardInfo&#x27;: {&#x27;cardNumber&#x27;: &#x27;lyp_0008&#x27;, &#x27;cardBalance&#x27;: 10}}, &#x27;timeout&#x27;: 30}
+响应数据: {&quot;code&quot;:5012,&quot;msg&quot;:&quot;卡号已经注销,无法充值&quot;,&quot;success&quot;:false}
+执行sql: DELETE FROM cardinfo WHERE cardNumber=&quot;lyp_0008&quot;
+<br/> -------------------------------Captured log call-------------------------------- <br/>DEBUG    urllib3.connectionpool:connectionpool.py:437 http://115.28.108.130:8080 &quot;POST /gasStation/process HTTP/1.1&quot; 200 None<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_cases/api_test/test_recharge_fuel_card.py::test_noCardRecharge</td>
+          <td class="col-duration">0.09</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>查询sql: SELECT id FROM cardinfo WHERE cardNumber=&quot;lyp_0009&quot;
+查询数据: ()
+请求数据: post http://115.28.108.130:8080/gasStation/process {&#x27;json&#x27;: {&#x27;dataSourceId&#x27;: &#x27;bHRz&#x27;, &#x27;methodId&#x27;: &#x27;03A&#x27;, &#x27;CardInfo&#x27;: {&#x27;cardNumber&#x27;: &#x27;lyp_0009&#x27;, &#x27;cardBalance&#x27;: 10}}, &#x27;timeout&#x27;: 30}
+响应数据: {&quot;code&quot;:5013,&quot;msg&quot;:&quot;加油卡号不存在&quot;,&quot;success&quot;:false}
+<br/> -------------------------------Captured log call-------------------------------- <br/>DEBUG    urllib3.connectionpool:connectionpool.py:437 http://115.28.108.130:8080 &quot;POST /gasStation/process HTTP/1.1&quot; 200 None<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_cases/api_test/test_search_fuel_card.py::test_searchRecord</td>
+          <td class="col-duration">0.14</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>查询sql: SELECT id FROM consumptiondetails WHERE cardNumber=&quot;lyp_0001&quot;
+查询数据: [{&#x27;id&#x27;: 1222424}]
+查询sql: SELECT id FROM rechargedetails WHERE cardNumber=&quot;lyp_0001&quot;
+查询数据: [{&#x27;id&#x27;: 1222494}]
+lyp_0001存在1条充值记录和1条消费记录
+请求数据: get http://115.28.108.130:8080/gasStation/process? {&#x27;params&#x27;: {&#x27;dataSourceId&#x27;: &#x27;bHRz&#x27;, &#x27;methodId&#x27;: &#x27;02A&#x27;, &#x27;userId&#x27;: 1364414, &#x27;cardNumber&#x27;: &#x27;lyp_0001&#x27;}, &#x27;timeout&#x27;: 30}
+响应数据: {&quot;code&quot;:200,&quot;msg&quot;:&quot;成功返回&quot;,&quot;result&quot;:{&quot;cardBalance&quot;:&quot;15&quot;,&quot;cardNumber&quot;:&quot;lyp_0001&quot;,&quot;consumptionDetails&quot;:[&quot;消费金额:3,时间:2019-11-22 11:56:05&quot;],&quot;rechargeDetails&quot;:[&quot;充值金额:10,时间:2019-11-22 11:56:06&quot;]},&quot;success&quot;:true}
+<br/> -------------------------------Captured log call-------------------------------- <br/>DEBUG    urllib3.connectionpool:connectionpool.py:437 http://115.28.108.130:8080 &quot;GET /gasStation/process?dataSourceId=bHRz&amp;methodId=02A&amp;userId=1364414&amp;cardNumber=lyp_0001 HTTP/1.1&quot; 200 None<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_cases/api_test/test_search_fuel_card.py::test_searchNoRecord</td>
+          <td class="col-duration">0.22</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>查询sql: SELECT id FROM consumptiondetails WHERE cardNumber=&quot;lyp_0001&quot;
+查询数据: [{&#x27;id&#x27;: 1222424}]
+查询sql: SELECT id FROM rechargedetails WHERE cardNumber=&quot;lyp_0001&quot;
+查询数据: [{&#x27;id&#x27;: 1222494}]
+lyp_0001存在1条充值记录和1条消费记录
+执行sql: DELETE FROM consumptiondetails WHERE cardNumber=&quot;lyp_0001&quot;
+执行sql: DELETE FROM rechargedetails WHERE cardNumber=&quot;lyp_0001&quot;
+请求数据: get http://115.28.108.130:8080/gasStation/process? {&#x27;params&#x27;: {&#x27;dataSourceId&#x27;: &#x27;bHRz&#x27;, &#x27;methodId&#x27;: &#x27;02A&#x27;, &#x27;userId&#x27;: 1364414, &#x27;cardNumber&#x27;: &#x27;lyp_0001&#x27;}, &#x27;timeout&#x27;: 30}
+响应数据: {&quot;code&quot;:200,&quot;msg&quot;:&quot;成功返回&quot;,&quot;result&quot;:{&quot;cardBalance&quot;:&quot;15&quot;,&quot;cardNumber&quot;:&quot;lyp_0001&quot;,&quot;consumptionDetails&quot;:[],&quot;rechargeDetails&quot;:[]},&quot;success&quot;:true}
+<br/> -------------------------------Captured log call-------------------------------- <br/>DEBUG    urllib3.connectionpool:connectionpool.py:437 http://115.28.108.130:8080 &quot;GET /gasStation/process?dataSourceId=bHRz&amp;methodId=02A&amp;userId=1364414&amp;cardNumber=lyp_0001 HTTP/1.1&quot; 200 None<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_cases/api_test/test_search_fuel_card.py::test_searchNoCard</td>
+          <td class="col-duration">0.09</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>查询sql: SELECT id FROM cardinfo WHERE cardNumber=&quot;lyp_0011&quot;
+查询数据: ()
+请求数据: get http://115.28.108.130:8080/gasStation/process? {&#x27;params&#x27;: {&#x27;dataSourceId&#x27;: &#x27;bHRz&#x27;, &#x27;methodId&#x27;: &#x27;02A&#x27;, &#x27;userId&#x27;: 1364414, &#x27;cardNumber&#x27;: &#x27;lyp_0011&#x27;}, &#x27;timeout&#x27;: 30}
+响应数据: {&quot;code&quot;:400,&quot;msg&quot;:&quot;无查询信息&quot;,&quot;success&quot;:false}
+<br/> -------------------------------Captured log call-------------------------------- <br/>DEBUG    urllib3.connectionpool:connectionpool.py:437 http://115.28.108.130:8080 &quot;GET /gasStation/process?dataSourceId=bHRz&amp;methodId=02A&amp;userId=1364414&amp;cardNumber=lyp_0011 HTTP/1.1&quot; 200 None<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_cases/api_test/test_search_fuel_card.py::test_searchNoUser</td>
+          <td class="col-duration">0.09</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>查询sql: SELECT userId FROM carduser WHERE userId=&quot;1364316&quot;
+查询数据: ()
+请求数据: get http://115.28.108.130:8080/gasStation/process? {&#x27;params&#x27;: {&#x27;dataSourceId&#x27;: &#x27;bHRz&#x27;, &#x27;methodId&#x27;: &#x27;02A&#x27;, &#x27;userId&#x27;: 1364316, &#x27;cardNumber&#x27;: &#x27;lyp_0012&#x27;}, &#x27;timeout&#x27;: 30}
+响应数据: {&quot;code&quot;:400,&quot;msg&quot;:&quot;无查询信息&quot;,&quot;success&quot;:false}
+<br/> -------------------------------Captured log call-------------------------------- <br/>DEBUG    urllib3.connectionpool:connectionpool.py:437 http://115.28.108.130:8080 &quot;GET /gasStation/process?dataSourceId=bHRz&amp;methodId=02A&amp;userId=1364316&amp;cardNumber=lyp_0012 HTTP/1.1&quot; 200 None<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_cases/app_test/test_wechat.py::test_login</td>
+          <td class="col-duration">2.99</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -------------------------------Captured log setup------------------------------- <br/>DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:388 POST http://127.0.0.1:4723/wd/hub/session {&quot;capabilities&quot;: {&quot;firstMatch&quot;: [{&quot;platformName&quot;: &quot;Android&quot;, &quot;appium:platformVersion&quot;: &quot;5.1.1&quot;, &quot;appium:deviceName&quot;: &quot;127.0.0.1:62001&quot;, &quot;appium:appPackage&quot;: &quot;com.lqr.wechat&quot;, &quot;appium:appActivity&quot;: &quot;com.lqr.wechat.ui.activity.SplashActivity&quot;, &quot;appium:unicodeKeyboard&quot;: true, &quot;appium:resetKeyboard&quot;: true, &quot;appium:autoLaunch&quot;: false}]}, &quot;desiredCapabilities&quot;: {&quot;platformName&quot;: &quot;Android&quot;, &quot;platformVersion&quot;: &quot;5.1.1&quot;, &quot;deviceName&quot;: &quot;127.0.0.1:62001&quot;, &quot;appPackage&quot;: &quot;com.lqr.wechat&quot;, &quot;appActivity&quot;: &quot;com.lqr.wechat.ui.activity.SplashActivity&quot;, &quot;unicodeKeyboard&quot;: true, &quot;resetKeyboard&quot;: true, &quot;autoLaunch&quot;: false}}
+DEBUG    urllib3.connectionpool:connectionpool.py:225 Starting new HTTP connection (1): 127.0.0.1:4723
+DEBUG    urllib3.connectionpool:connectionpool.py:437 http://127.0.0.1:4723 &quot;POST /wd/hub/session HTTP/1.1&quot; 200 1011
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:388 POST http://127.0.0.1:4723/wd/hub/session/7e62527f-7d50-4492-bea6-c09499b19d61/timeouts {&quot;implicit&quot;: 10000}
+DEBUG    urllib3.connectionpool:connectionpool.py:437 http://127.0.0.1:4723 &quot;POST /wd/hub/session/7e62527f-7d50-4492-bea6-c09499b19d61/timeouts HTTP/1.1&quot; 200 14
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:388 POST http://127.0.0.1:4723/wd/hub/session/7e62527f-7d50-4492-bea6-c09499b19d61/appium/app/launch {}
+DEBUG    urllib3.connectionpool:connectionpool.py:437 http://127.0.0.1:4723 &quot;POST /wd/hub/session/7e62527f-7d50-4492-bea6-c09499b19d61/appium/app/launch HTTP/1.1&quot; 200 14
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request<br/> -------------------------------Captured log call-------------------------------- <br/>DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:388 POST http://127.0.0.1:4723/wd/hub/session/7e62527f-7d50-4492-bea6-c09499b19d61/element {&quot;using&quot;: &quot;id&quot;, &quot;value&quot;: &quot;com.lqr.wechat:id/btnLogin&quot;}
+DEBUG    urllib3.connectionpool:connectionpool.py:437 http://127.0.0.1:4723 &quot;POST /wd/hub/session/7e62527f-7d50-4492-bea6-c09499b19d61/element HTTP/1.1&quot; 200 137
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:388 POST http://127.0.0.1:4723/wd/hub/session/7e62527f-7d50-4492-bea6-c09499b19d61/element/7a0e37b0-d851-4846-be02-153606cd9c55/click {&quot;id&quot;: &quot;7a0e37b0-d851-4846-be02-153606cd9c55&quot;}
+DEBUG    urllib3.connectionpool:connectionpool.py:437 http://127.0.0.1:4723 &quot;POST /wd/hub/session/7e62527f-7d50-4492-bea6-c09499b19d61/element/7a0e37b0-d851-4846-be02-153606cd9c55/click HTTP/1.1&quot; 200 14
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:388 POST http://127.0.0.1:4723/wd/hub/session/7e62527f-7d50-4492-bea6-c09499b19d61/element {&quot;using&quot;: &quot;id&quot;, &quot;value&quot;: &quot;com.lqr.wechat:id/etPhone&quot;}
+DEBUG    urllib3.connectionpool:connectionpool.py:437 http://127.0.0.1:4723 &quot;POST /wd/hub/session/7e62527f-7d50-4492-bea6-c09499b19d61/element HTTP/1.1&quot; 200 137
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:388 POST http://127.0.0.1:4723/wd/hub/session/7e62527f-7d50-4492-bea6-c09499b19d61/element/7a25b8f4-25b9-4693-97de-7758490babad/value {&quot;text&quot;: &quot;18010181267&quot;, &quot;value&quot;: [&quot;1&quot;, &quot;8&quot;, &quot;0&quot;, &quot;1&quot;, &quot;0&quot;, &quot;1&quot;, &quot;8&quot;, &quot;1&quot;, &quot;2&quot;, &quot;6&quot;, &quot;7&quot;], &quot;id&quot;: &quot;7a25b8f4-25b9-4693-97de-7758490babad&quot;}
+DEBUG    urllib3.connectionpool:connectionpool.py:437 http://127.0.0.1:4723 &quot;POST /wd/hub/session/7e62527f-7d50-4492-bea6-c09499b19d61/element/7a25b8f4-25b9-4693-97de-7758490babad/value HTTP/1.1&quot; 200 14
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:388 POST http://127.0.0.1:4723/wd/hub/session/7e62527f-7d50-4492-bea6-c09499b19d61/element {&quot;using&quot;: &quot;id&quot;, &quot;value&quot;: &quot;com.lqr.wechat:id/etPwd&quot;}
+DEBUG    urllib3.connectionpool:connectionpool.py:437 http://127.0.0.1:4723 &quot;POST /wd/hub/session/7e62527f-7d50-4492-bea6-c09499b19d61/element HTTP/1.1&quot; 200 137
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:388 POST http://127.0.0.1:4723/wd/hub/session/7e62527f-7d50-4492-bea6-c09499b19d61/element/623bc7c3-847e-492b-8553-6c193f37cbe7/value {&quot;text&quot;: &quot;123456&quot;, &quot;value&quot;: [&quot;1&quot;, &quot;2&quot;, &quot;3&quot;, &quot;4&quot;, &quot;5&quot;, &quot;6&quot;], &quot;id&quot;: &quot;623bc7c3-847e-492b-8553-6c193f37cbe7&quot;}
+DEBUG    urllib3.connectionpool:connectionpool.py:437 http://127.0.0.1:4723 &quot;POST /wd/hub/session/7e62527f-7d50-4492-bea6-c09499b19d61/element/623bc7c3-847e-492b-8553-6c193f37cbe7/value HTTP/1.1&quot; 200 14
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:388 POST http://127.0.0.1:4723/wd/hub/session/7e62527f-7d50-4492-bea6-c09499b19d61/element {&quot;using&quot;: &quot;id&quot;, &quot;value&quot;: &quot;com.lqr.wechat:id/btnLogin&quot;}
+DEBUG    urllib3.connectionpool:connectionpool.py:437 http://127.0.0.1:4723 &quot;POST /wd/hub/session/7e62527f-7d50-4492-bea6-c09499b19d61/element HTTP/1.1&quot; 200 137
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:388 POST http://127.0.0.1:4723/wd/hub/session/7e62527f-7d50-4492-bea6-c09499b19d61/element/b16074e9-be7e-4114-8334-3bada7aa2a16/click {&quot;id&quot;: &quot;b16074e9-be7e-4114-8334-3bada7aa2a16&quot;}
+DEBUG    urllib3.connectionpool:connectionpool.py:437 http://127.0.0.1:4723 &quot;POST /wd/hub/session/7e62527f-7d50-4492-bea6-c09499b19d61/element/b16074e9-be7e-4114-8334-3bada7aa2a16/click HTTP/1.1&quot; 200 14
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_cases/app_test/test_wechat.py::test_online</td>
+          <td class="col-duration">5.58</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -------------------------------Captured log setup------------------------------- <br/>DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:388 POST http://127.0.0.1:4723/wd/hub/session/7e62527f-7d50-4492-bea6-c09499b19d61/appium/app/launch {}
+DEBUG    urllib3.connectionpool:connectionpool.py:437 http://127.0.0.1:4723 &quot;POST /wd/hub/session/7e62527f-7d50-4492-bea6-c09499b19d61/appium/app/launch HTTP/1.1&quot; 200 14
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:388 POST http://127.0.0.1:4723/wd/hub/session/7e62527f-7d50-4492-bea6-c09499b19d61/appium/app/launch {}
+DEBUG    urllib3.connectionpool:connectionpool.py:437 http://127.0.0.1:4723 &quot;POST /wd/hub/session/7e62527f-7d50-4492-bea6-c09499b19d61/appium/app/launch HTTP/1.1&quot; 200 14
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:388 POST http://127.0.0.1:4723/wd/hub/session/7e62527f-7d50-4492-bea6-c09499b19d61/element {&quot;using&quot;: &quot;id&quot;, &quot;value&quot;: &quot;com.lqr.wechat:id/btnLogin&quot;}
+DEBUG    urllib3.connectionpool:connectionpool.py:437 http://127.0.0.1:4723 &quot;POST /wd/hub/session/7e62527f-7d50-4492-bea6-c09499b19d61/element HTTP/1.1&quot; 200 137
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:388 POST http://127.0.0.1:4723/wd/hub/session/7e62527f-7d50-4492-bea6-c09499b19d61/element/c26bfbf7-1576-4bfc-8043-c562583f4e3c/click {&quot;id&quot;: &quot;c26bfbf7-1576-4bfc-8043-c562583f4e3c&quot;}
+DEBUG    urllib3.connectionpool:connectionpool.py:437 http://127.0.0.1:4723 &quot;POST /wd/hub/session/7e62527f-7d50-4492-bea6-c09499b19d61/element/c26bfbf7-1576-4bfc-8043-c562583f4e3c/click HTTP/1.1&quot; 200 14
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:388 POST http://127.0.0.1:4723/wd/hub/session/7e62527f-7d50-4492-bea6-c09499b19d61/element {&quot;using&quot;: &quot;id&quot;, &quot;value&quot;: &quot;com.lqr.wechat:id/etPhone&quot;}
+DEBUG    urllib3.connectionpool:connectionpool.py:437 http://127.0.0.1:4723 &quot;POST /wd/hub/session/7e62527f-7d50-4492-bea6-c09499b19d61/element HTTP/1.1&quot; 200 137
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:388 POST http://127.0.0.1:4723/wd/hub/session/7e62527f-7d50-4492-bea6-c09499b19d61/element/6918139f-e077-4817-ab92-f9c22312667b/value {&quot;text&quot;: &quot;18010181267&quot;, &quot;value&quot;: [&quot;1&quot;, &quot;8&quot;, &quot;0&quot;, &quot;1&quot;, &quot;0&quot;, &quot;1&quot;, &quot;8&quot;, &quot;1&quot;, &quot;2&quot;, &quot;6&quot;, &quot;7&quot;], &quot;id&quot;: &quot;6918139f-e077-4817-ab92-f9c22312667b&quot;}
+DEBUG    urllib3.connectionpool:connectionpool.py:437 http://127.0.0.1:4723 &quot;POST /wd/hub/session/7e62527f-7d50-4492-bea6-c09499b19d61/element/6918139f-e077-4817-ab92-f9c22312667b/value HTTP/1.1&quot; 200 14
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:388 POST http://127.0.0.1:4723/wd/hub/session/7e62527f-7d50-4492-bea6-c09499b19d61/element {&quot;using&quot;: &quot;id&quot;, &quot;value&quot;: &quot;com.lqr.wechat:id/etPwd&quot;}
+DEBUG    urllib3.connectionpool:connectionpool.py:437 http://127.0.0.1:4723 &quot;POST /wd/hub/session/7e62527f-7d50-4492-bea6-c09499b19d61/element HTTP/1.1&quot; 200 137
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:388 POST http://127.0.0.1:4723/wd/hub/session/7e62527f-7d50-4492-bea6-c09499b19d61/element/ae030a55-d488-41b6-a162-37540f16f408/value {&quot;text&quot;: &quot;123456&quot;, &quot;value&quot;: [&quot;1&quot;, &quot;2&quot;, &quot;3&quot;, &quot;4&quot;, &quot;5&quot;, &quot;6&quot;], &quot;id&quot;: &quot;ae030a55-d488-41b6-a162-37540f16f408&quot;}
+DEBUG    urllib3.connectionpool:connectionpool.py:437 http://127.0.0.1:4723 &quot;POST /wd/hub/session/7e62527f-7d50-4492-bea6-c09499b19d61/element/ae030a55-d488-41b6-a162-37540f16f408/value HTTP/1.1&quot; 200 14
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:388 POST http://127.0.0.1:4723/wd/hub/session/7e62527f-7d50-4492-bea6-c09499b19d61/element {&quot;using&quot;: &quot;id&quot;, &quot;value&quot;: &quot;com.lqr.wechat:id/btnLogin&quot;}
+DEBUG    urllib3.connectionpool:connectionpool.py:437 http://127.0.0.1:4723 &quot;POST /wd/hub/session/7e62527f-7d50-4492-bea6-c09499b19d61/element HTTP/1.1&quot; 200 137
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:388 POST http://127.0.0.1:4723/wd/hub/session/7e62527f-7d50-4492-bea6-c09499b19d61/element/9f1cacce-44ae-406c-910d-587e2cabb148/click {&quot;id&quot;: &quot;9f1cacce-44ae-406c-910d-587e2cabb148&quot;}
+DEBUG    urllib3.connectionpool:connectionpool.py:437 http://127.0.0.1:4723 &quot;POST /wd/hub/session/7e62527f-7d50-4492-bea6-c09499b19d61/element/9f1cacce-44ae-406c-910d-587e2cabb148/click HTTP/1.1&quot; 200 14
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request<br/> -------------------------------Captured log call-------------------------------- <br/>DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:388 POST http://127.0.0.1:4723/wd/hub/session/7e62527f-7d50-4492-bea6-c09499b19d61/element {&quot;using&quot;: &quot;id&quot;, &quot;value&quot;: &quot;com.lqr.wechat:id/llContacts&quot;}
+DEBUG    urllib3.connectionpool:connectionpool.py:437 http://127.0.0.1:4723 &quot;POST /wd/hub/session/7e62527f-7d50-4492-bea6-c09499b19d61/element HTTP/1.1&quot; 200 137
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:388 POST http://127.0.0.1:4723/wd/hub/session/7e62527f-7d50-4492-bea6-c09499b19d61/element/cce04b6e-968f-4694-8b5f-5435beae7466/click {&quot;id&quot;: &quot;cce04b6e-968f-4694-8b5f-5435beae7466&quot;}
+DEBUG    urllib3.connectionpool:connectionpool.py:437 http://127.0.0.1:4723 &quot;POST /wd/hub/session/7e62527f-7d50-4492-bea6-c09499b19d61/element/cce04b6e-968f-4694-8b5f-5435beae7466/click HTTP/1.1&quot; 200 14
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:388 POST http://127.0.0.1:4723/wd/hub/session/7e62527f-7d50-4492-bea6-c09499b19d61/element {&quot;using&quot;: &quot;xpath&quot;, &quot;value&quot;: &quot;//*[@text=\&quot;\u6b6a\u6b6a\&quot;]&quot;}
+DEBUG    urllib3.connectionpool:connectionpool.py:437 http://127.0.0.1:4723 &quot;POST /wd/hub/session/7e62527f-7d50-4492-bea6-c09499b19d61/element HTTP/1.1&quot; 200 137
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:388 POST http://127.0.0.1:4723/wd/hub/session/7e62527f-7d50-4492-bea6-c09499b19d61/element/69dd0498-8eb9-409c-9c83-ac7d4f7975eb/click {&quot;id&quot;: &quot;69dd0498-8eb9-409c-9c83-ac7d4f7975eb&quot;}
+DEBUG    urllib3.connectionpool:connectionpool.py:437 http://127.0.0.1:4723 &quot;POST /wd/hub/session/7e62527f-7d50-4492-bea6-c09499b19d61/element/69dd0498-8eb9-409c-9c83-ac7d4f7975eb/click HTTP/1.1&quot; 200 14
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:388 POST http://127.0.0.1:4723/wd/hub/session/7e62527f-7d50-4492-bea6-c09499b19d61/element {&quot;using&quot;: &quot;id&quot;, &quot;value&quot;: &quot;com.lqr.wechat:id/btnCheat&quot;}
+DEBUG    urllib3.connectionpool:connectionpool.py:437 http://127.0.0.1:4723 &quot;POST /wd/hub/session/7e62527f-7d50-4492-bea6-c09499b19d61/element HTTP/1.1&quot; 200 137
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:388 POST http://127.0.0.1:4723/wd/hub/session/7e62527f-7d50-4492-bea6-c09499b19d61/element/ca226d61-3804-46ab-81f6-7898e19567e9/click {&quot;id&quot;: &quot;ca226d61-3804-46ab-81f6-7898e19567e9&quot;}
+DEBUG    urllib3.connectionpool:connectionpool.py:437 http://127.0.0.1:4723 &quot;POST /wd/hub/session/7e62527f-7d50-4492-bea6-c09499b19d61/element/ca226d61-3804-46ab-81f6-7898e19567e9/click HTTP/1.1&quot; 200 14
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:388 POST http://127.0.0.1:4723/wd/hub/session/7e62527f-7d50-4492-bea6-c09499b19d61/element {&quot;using&quot;: &quot;id&quot;, &quot;value&quot;: &quot;com.lqr.wechat:id/etContent&quot;}
+DEBUG    urllib3.connectionpool:connectionpool.py:437 http://127.0.0.1:4723 &quot;POST /wd/hub/session/7e62527f-7d50-4492-bea6-c09499b19d61/element HTTP/1.1&quot; 200 137
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:388 POST http://127.0.0.1:4723/wd/hub/session/7e62527f-7d50-4492-bea6-c09499b19d61/element/bd9d258e-f1a6-4db0-ac10-c819f165d909/value {&quot;text&quot;: &quot;\u55e8\uff01\u4f60\u597d&quot;, &quot;value&quot;: [&quot;\u55e8&quot;, &quot;\uff01&quot;, &quot;\u4f60&quot;, &quot;\u597d&quot;], &quot;id&quot;: &quot;bd9d258e-f1a6-4db0-ac10-c819f165d909&quot;}
+DEBUG    urllib3.connectionpool:connectionpool.py:437 http://127.0.0.1:4723 &quot;POST /wd/hub/session/7e62527f-7d50-4492-bea6-c09499b19d61/element/bd9d258e-f1a6-4db0-ac10-c819f165d909/value HTTP/1.1&quot; 200 14
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:388 POST http://127.0.0.1:4723/wd/hub/session/7e62527f-7d50-4492-bea6-c09499b19d61/element {&quot;using&quot;: &quot;id&quot;, &quot;value&quot;: &quot;com.lqr.wechat:id/btnSend&quot;}
+DEBUG    urllib3.connectionpool:connectionpool.py:437 http://127.0.0.1:4723 &quot;POST /wd/hub/session/7e62527f-7d50-4492-bea6-c09499b19d61/element HTTP/1.1&quot; 200 137
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:388 POST http://127.0.0.1:4723/wd/hub/session/7e62527f-7d50-4492-bea6-c09499b19d61/element/f4cb3478-1659-4f13-8bf2-b150ae710d3d/click {&quot;id&quot;: &quot;f4cb3478-1659-4f13-8bf2-b150ae710d3d&quot;}
+DEBUG    urllib3.connectionpool:connectionpool.py:437 http://127.0.0.1:4723 &quot;POST /wd/hub/session/7e62527f-7d50-4492-bea6-c09499b19d61/element/f4cb3478-1659-4f13-8bf2-b150ae710d3d/click HTTP/1.1&quot; 200 14
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_cases/web_test/test_demo1.py::test_baidu3</td>
+          <td class="col-duration">3.18</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -------------------------------Captured log setup------------------------------- <br/>INFO     pytest_selenium.pytest_selenium:pytest_selenium.py:122 Capabilities from markers: {}
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:388 POST http://127.0.0.1:4056/session {&quot;capabilities&quot;: {&quot;firstMatch&quot;: [{}], &quot;alwaysMatch&quot;: {&quot;browserName&quot;: &quot;chrome&quot;, &quot;platformName&quot;: &quot;any&quot;, &quot;goog:chromeOptions&quot;: {&quot;w3c&quot;: false, &quot;extensions&quot;: [], &quot;args&quot;: [&quot;--start-maximized&quot;, &quot;--no-sandbox&quot;]}}}, &quot;desiredCapabilities&quot;: {&quot;browserName&quot;: &quot;chrome&quot;, &quot;version&quot;: &quot;&quot;, &quot;platform&quot;: &quot;ANY&quot;, &quot;goog:chromeOptions&quot;: {&quot;w3c&quot;: false, &quot;extensions&quot;: [], &quot;args&quot;: [&quot;--start-maximized&quot;, &quot;--no-sandbox&quot;]}}}
+DEBUG    urllib3.connectionpool:connectionpool.py:225 Starting new HTTP connection (1): 127.0.0.1:4056
+DEBUG    urllib3.connectionpool:connectionpool.py:437 http://127.0.0.1:4056 &quot;POST /session HTTP/1.1&quot; 200 1035
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:388 POST http://127.0.0.1:4056/session/cf6840b3c1649c43f402c8771e2065f6/timeouts/implicit_wait {&quot;ms&quot;: 15000.0, &quot;sessionId&quot;: &quot;cf6840b3c1649c43f402c8771e2065f6&quot;}
+DEBUG    urllib3.connectionpool:connectionpool.py:437 http://127.0.0.1:4056 &quot;POST /session/cf6840b3c1649c43f402c8771e2065f6/timeouts/implicit_wait HTTP/1.1&quot; 200 72
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:388 POST http://127.0.0.1:4056/session/cf6840b3c1649c43f402c8771e2065f6/url {&quot;url&quot;: &quot;https://www.baidu.com&quot;, &quot;sessionId&quot;: &quot;cf6840b3c1649c43f402c8771e2065f6&quot;}
+DEBUG    urllib3.connectionpool:connectionpool.py:437 http://127.0.0.1:4056 &quot;POST /session/cf6840b3c1649c43f402c8771e2065f6/url HTTP/1.1&quot; 200 72
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request<br/> ------------------------------Captured stdout call------------------------------ <br/>测试百度搜索 少年的你
+<br/> -------------------------------Captured log call-------------------------------- <br/>DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:388 POST http://127.0.0.1:4056/session/cf6840b3c1649c43f402c8771e2065f6/element {&quot;using&quot;: &quot;id&quot;, &quot;value&quot;: &quot;kw&quot;, &quot;sessionId&quot;: &quot;cf6840b3c1649c43f402c8771e2065f6&quot;}
+DEBUG    urllib3.connectionpool:connectionpool.py:437 http://127.0.0.1:4056 &quot;POST /session/cf6840b3c1649c43f402c8771e2065f6/element HTTP/1.1&quot; 200 103
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:388 POST http://127.0.0.1:4056/session/cf6840b3c1649c43f402c8771e2065f6/element/0.35629894331164236-1/value {&quot;text&quot;: &quot;\u5c11\u5e74\u7684\u4f60&quot;, &quot;value&quot;: [&quot;\u5c11&quot;, &quot;\u5e74&quot;, &quot;\u7684&quot;, &quot;\u4f60&quot;], &quot;id&quot;: &quot;0.35629894331164236-1&quot;, &quot;sessionId&quot;: &quot;cf6840b3c1649c43f402c8771e2065f6&quot;}
+DEBUG    urllib3.connectionpool:connectionpool.py:437 http://127.0.0.1:4056 &quot;POST /session/cf6840b3c1649c43f402c8771e2065f6/element/0.35629894331164236-1/value HTTP/1.1&quot; 200 72
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:388 POST http://127.0.0.1:4056/session/cf6840b3c1649c43f402c8771e2065f6/element {&quot;using&quot;: &quot;id&quot;, &quot;value&quot;: &quot;su&quot;, &quot;sessionId&quot;: &quot;cf6840b3c1649c43f402c8771e2065f6&quot;}
+DEBUG    urllib3.connectionpool:connectionpool.py:437 http://127.0.0.1:4056 &quot;POST /session/cf6840b3c1649c43f402c8771e2065f6/element HTTP/1.1&quot; 200 103
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:388 POST http://127.0.0.1:4056/session/cf6840b3c1649c43f402c8771e2065f6/element/0.35629894331164236-2/click {&quot;id&quot;: &quot;0.35629894331164236-2&quot;, &quot;sessionId&quot;: &quot;cf6840b3c1649c43f402c8771e2065f6&quot;}
+DEBUG    urllib3.connectionpool:connectionpool.py:437 http://127.0.0.1:4056 &quot;POST /session/cf6840b3c1649c43f402c8771e2065f6/element/0.35629894331164236-2/click HTTP/1.1&quot; 200 72
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_cases/web_test/test_demo1.py::test_ecshop_login2</td>
+          <td class="col-duration">6.41</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -------------------------------Captured log setup------------------------------- <br/>INFO     pytest_selenium.pytest_selenium:pytest_selenium.py:122 Capabilities from markers: {}
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:388 POST http://127.0.0.1:4097/session {&quot;capabilities&quot;: {&quot;firstMatch&quot;: [{}], &quot;alwaysMatch&quot;: {&quot;browserName&quot;: &quot;chrome&quot;, &quot;platformName&quot;: &quot;any&quot;, &quot;goog:chromeOptions&quot;: {&quot;w3c&quot;: false, &quot;extensions&quot;: [], &quot;args&quot;: [&quot;--start-maximized&quot;, &quot;--no-sandbox&quot;]}}}, &quot;desiredCapabilities&quot;: {&quot;browserName&quot;: &quot;chrome&quot;, &quot;version&quot;: &quot;&quot;, &quot;platform&quot;: &quot;ANY&quot;, &quot;goog:chromeOptions&quot;: {&quot;w3c&quot;: false, &quot;extensions&quot;: [], &quot;args&quot;: [&quot;--start-maximized&quot;, &quot;--no-sandbox&quot;]}}}
+DEBUG    urllib3.connectionpool:connectionpool.py:225 Starting new HTTP connection (1): 127.0.0.1:4097
+DEBUG    urllib3.connectionpool:connectionpool.py:437 http://127.0.0.1:4097 &quot;POST /session HTTP/1.1&quot; 200 1036
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:388 POST http://127.0.0.1:4097/session/684399f1bd61520bfd2a703773eb3a96/timeouts/implicit_wait {&quot;ms&quot;: 15000.0, &quot;sessionId&quot;: &quot;684399f1bd61520bfd2a703773eb3a96&quot;}
+DEBUG    urllib3.connectionpool:connectionpool.py:437 http://127.0.0.1:4097 &quot;POST /session/684399f1bd61520bfd2a703773eb3a96/timeouts/implicit_wait HTTP/1.1&quot; 200 72
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:388 POST http://127.0.0.1:4097/session/684399f1bd61520bfd2a703773eb3a96/url {&quot;url&quot;: &quot;http://39.104.14.232/ecshop/wwwroot/admin/privilege.php?act=login&quot;, &quot;sessionId&quot;: &quot;684399f1bd61520bfd2a703773eb3a96&quot;}
+DEBUG    urllib3.connectionpool:connectionpool.py:437 http://127.0.0.1:4097 &quot;POST /session/684399f1bd61520bfd2a703773eb3a96/url HTTP/1.1&quot; 200 72
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request<br/> -------------------------------Captured log call-------------------------------- <br/>DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:388 POST http://127.0.0.1:4097/session/684399f1bd61520bfd2a703773eb3a96/element {&quot;using&quot;: &quot;name&quot;, &quot;value&quot;: &quot;username&quot;, &quot;sessionId&quot;: &quot;684399f1bd61520bfd2a703773eb3a96&quot;}
+DEBUG    urllib3.connectionpool:connectionpool.py:437 http://127.0.0.1:4097 &quot;POST /session/684399f1bd61520bfd2a703773eb3a96/element HTTP/1.1&quot; 200 101
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:388 POST http://127.0.0.1:4097/session/684399f1bd61520bfd2a703773eb3a96/element/0.594256609212706-1/value {&quot;text&quot;: &quot;liuyp&quot;, &quot;value&quot;: [&quot;l&quot;, &quot;i&quot;, &quot;u&quot;, &quot;y&quot;, &quot;p&quot;], &quot;id&quot;: &quot;0.594256609212706-1&quot;, &quot;sessionId&quot;: &quot;684399f1bd61520bfd2a703773eb3a96&quot;}
+DEBUG    urllib3.connectionpool:connectionpool.py:437 http://127.0.0.1:4097 &quot;POST /session/684399f1bd61520bfd2a703773eb3a96/element/0.594256609212706-1/value HTTP/1.1&quot; 200 72
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:388 POST http://127.0.0.1:4097/session/684399f1bd61520bfd2a703773eb3a96/element {&quot;using&quot;: &quot;name&quot;, &quot;value&quot;: &quot;password&quot;, &quot;sessionId&quot;: &quot;684399f1bd61520bfd2a703773eb3a96&quot;}
+DEBUG    urllib3.connectionpool:connectionpool.py:437 http://127.0.0.1:4097 &quot;POST /session/684399f1bd61520bfd2a703773eb3a96/element HTTP/1.1&quot; 200 101
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:388 POST http://127.0.0.1:4097/session/684399f1bd61520bfd2a703773eb3a96/element/0.594256609212706-2/value {&quot;text&quot;: &quot;abc123&quot;, &quot;value&quot;: [&quot;a&quot;, &quot;b&quot;, &quot;c&quot;, &quot;1&quot;, &quot;2&quot;, &quot;3&quot;], &quot;id&quot;: &quot;0.594256609212706-2&quot;, &quot;sessionId&quot;: &quot;684399f1bd61520bfd2a703773eb3a96&quot;}
+DEBUG    urllib3.connectionpool:connectionpool.py:437 http://127.0.0.1:4097 &quot;POST /session/684399f1bd61520bfd2a703773eb3a96/element/0.594256609212706-2/value HTTP/1.1&quot; 200 72
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:388 POST http://127.0.0.1:4097/session/684399f1bd61520bfd2a703773eb3a96/element {&quot;using&quot;: &quot;class name&quot;, &quot;value&quot;: &quot;button2&quot;, &quot;sessionId&quot;: &quot;684399f1bd61520bfd2a703773eb3a96&quot;}
+DEBUG    urllib3.connectionpool:connectionpool.py:437 http://127.0.0.1:4097 &quot;POST /session/684399f1bd61520bfd2a703773eb3a96/element HTTP/1.1&quot; 200 101
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:388 POST http://127.0.0.1:4097/session/684399f1bd61520bfd2a703773eb3a96/element/0.594256609212706-3/click {&quot;id&quot;: &quot;0.594256609212706-3&quot;, &quot;sessionId&quot;: &quot;684399f1bd61520bfd2a703773eb3a96&quot;}
+DEBUG    urllib3.connectionpool:connectionpool.py:437 http://127.0.0.1:4097 &quot;POST /session/684399f1bd61520bfd2a703773eb3a96/element/0.594256609212706-3/click HTTP/1.1&quot; 200 72
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">test_cases/web_test/test_demo1.py::test_logging</td>
+          <td class="col-duration">0.01</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>DEBUG    root:test_demo1.py:71 调试日志
+INFO     root:test_demo1.py:72 info信息
+WARNING  root:test_demo1.py:73 警告信息
+ERROR    root:test_demo1.py:74 报错信息
+CRITICAL root:test_demo1.py:75 严重出错<br/></div></td></tr></tbody></table></body></html>

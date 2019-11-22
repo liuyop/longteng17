@@ -3,7 +3,7 @@ import pytest_check as ck
 import json
 
 
-@pytest.mark.skip
+@pytest.mark.nondestructive
 @pytest.mark.p1
 @pytest.mark.api
 def test_bingFuelCard_normal(api, db, case_data):
@@ -33,7 +33,7 @@ def test_bingFuelCard_normal(api, db, case_data):
     ck.is_true(db.check_bindcard(card_number, user_id))
 
 
-@pytest.mark.skip
+@pytest.mark.nondestructive
 @pytest.mark.p2
 @pytest.mark.api
 @pytest.mark.negative
@@ -77,7 +77,7 @@ def test_bind3Card(api, db, case_data):
         db.del_card(i)
 
 
-@pytest.mark.skip
+@pytest.mark.nondestructive
 @pytest.mark.p2
 @pytest.mark.api
 @pytest.mark.negative
@@ -121,4 +121,4 @@ def test_blacklistCard(api, db, case_data):
 
 
 # if __name__ == '__main__':
-#     pytest.main(["test_bind_fuel_card.py::test_bingFuelCard_normal"])
+#     pytest.main(["test_bind_fuel_card.py"])
